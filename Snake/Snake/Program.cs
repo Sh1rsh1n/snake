@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace Snake
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
 
-            HorizontLine horizontUp = new HorizontLine(1, 20, 0, '+');
-            horizontUp.Draw();
-            HorizontLine horizontDown = new HorizontLine(1, 20, 11, '+');
+            HorizontLine horizontUp = new HorizontLine(0, 78, 0, '+');
+            HorizontLine horizontDown = new HorizontLine(0, 78, 24, '+');
+            VerticalLine verticalRight = new VerticalLine(0, 24, 0, '+');
+            VerticalLine verticalLeft = new VerticalLine(0, 24, 78, '+');
+
+
             horizontDown.Draw();
-
-
-            VerticalLine verticalRight = new VerticalLine(0, 12, 21, '+');
+            horizontUp.Draw();
             verticalRight.Draw();
-            VerticalLine verticalLeft = new VerticalLine(0, 12, 0, '+');
             verticalLeft.Draw();
 
             Console.ReadLine();

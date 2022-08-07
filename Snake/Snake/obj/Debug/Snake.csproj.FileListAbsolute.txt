@@ -1,0 +1,8 @@
+C:\Users\Sh1rer\Desktop\OOP\snake\Snake\Snake\bin\Debug\Snake.exe.config
+C:\Users\Sh1rer\Desktop\OOP\snake\Snake\Snake\bin\Debug\Snake.exe
+C:\Users\Sh1rer\Desktop\OOP\snake\Snake\Snake\bin\Debug\Snake.pdb
+C:\Users\Sh1rer\Desktop\OOP\snake\Snake\Snake\obj\Debug\Snake.csproj.AssemblyReference.cache
+C:\Users\Sh1rer\Desktop\OOP\snake\Snake\Snake\obj\Debug\Snake.csproj.SuggestedBindingRedirects.cache
+C:\Users\Sh1rer\Desktop\OOP\snake\Snake\Snake\obj\Debug\Snake.csproj.CoreCompileInputs.cache
+C:\Users\Sh1rer\Desktop\OOP\snake\Snake\Snake\obj\Debug\Snake.exe
+C:\Users\Sh1rer\Desktop\OOP\snake\Snake\Snake\obj\Debug\Snake.pdb

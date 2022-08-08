@@ -8,7 +8,7 @@ namespace Snake
 {
     class Snake : Figura
     {
-        Directions direction;
+        public Directions direction;
 
         public Snake(Point tail, int lenght, Directions _direction)
         {
@@ -23,7 +23,7 @@ namespace Snake
             }
         }
 
-        internal void Move()
+        public void Move()
         {
             Point tail = pointList.First();
             pointList.Remove(tail);
@@ -41,5 +41,32 @@ namespace Snake
             nextPoint.Move(1, direction);
             return nextPoint;
         }
+
+        public bool Eat(Point food)
+        {
+            Point head = GetNextPoint();
+            if (head.IsHit(food))
+            {
+                food.sym = head.sym;
+                pointList.Add(food);
+                return true;
+            }
+            else
+                return false;
+        }
+
+        public void HandleKey(ConsoleKey key)
+        {
+                    if (key == ConsoleKey.LeftArrow)
+                        direction = Directions.LEFT;
+                    else if (key == ConsoleKey.RightArrow)
+                        direction = Directions.RIGHT;
+                    else if (key == ConsoleKey.UpArrow)
+                        direction = Directions.UP;
+                    else if (key == ConsoleKey.DownArrow)
+                        direction = Directions.DOWN;
+        }
+
+
     }
 }

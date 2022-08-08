@@ -48,15 +48,20 @@ namespace Snake
             } 
             else if (directions == Directions.UP)
             {
-                y = y + offset;
+                y = y - offset;
             } 
             else if (directions == Directions.DOWN)
             {
-                y = y - offset;
+                y = y + offset;
             }
         }
 
-        internal void Clear()
+        public bool IsHit(Point point)
+        {
+            return point.x == this.x && point.y == this.y;
+        }
+
+        public void Clear()
         {
             sym = ' ';
             draw();

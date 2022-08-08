@@ -17,5 +17,17 @@ namespace Snake
                 pointList.Add(point);
             }
         }
+
+        public override void Drow()
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+
+            foreach (Point p in pointList)
+            {
+                p.draw();
+            }
+
+            Console.ForegroundColor = ConsoleColor.White;
+        }
     }
 }
